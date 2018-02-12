@@ -1,0 +1,21 @@
+.header {
+    background-image: linear-gradient(rgba($color-secondary, .23), rgba($color-secondary, .93)), url(../img/header.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(2,min-content) 1fr;
+
+    &__title {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    &__name {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
+
+
+

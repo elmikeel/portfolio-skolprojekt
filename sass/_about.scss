@@ -1,0 +1,30 @@
+.about {
+    background-color: $color-secondary;
+    display: grid;
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(min-content, 30rem) minmax(1.5rem, 1fr);
+    grid-template-rows: minmax(1.5rem, 1fr) repeat(2, min-content) minmax(1.5rem, 1fr);
+
+    &__title {
+        grid-column: 2/3;
+        grid-row: 1/2; 
+        align-self: end;
+        font-size: 3rem;
+    }
+
+    &__text {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 1.65rem;
+        color: grey;
+    }
+}
+
+@media only screen and (max-width: $bp-sm) {
+    .about {
+        grid-template-columns: repeat(8, 1fr);
+        &__title, &__text {
+            grid-column: 2/8;
+        }
+    }
+
+}
