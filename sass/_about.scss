@@ -2,7 +2,7 @@
     background-color: $color-secondary;
     display: grid;
     grid-template-columns: minmax(1.5rem, 1fr) minmax(min-content, 30rem) minmax(1.5rem, 1fr);
-    grid-template-rows: minmax(1.5rem, 1fr) repeat(2, min-content) minmax(1.5rem, 1fr);
+    grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
 
     &__title {
         grid-column: 2/3;

@@ -60,7 +60,7 @@ body {
   background-color: #101d2c;
   display: grid;
   grid-template-columns: minmax(1.5rem, 1fr) minmax(min-content, 30rem) minmax(1.5rem, 1fr);
-  grid-template-rows: minmax(1.5rem, 1fr) repeat(2, min-content) minmax(1.5rem, 1fr); }
+  grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr); }
   .about__title {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -167,11 +167,9 @@ body {
     grid-row: 4 / span 1;
     font-size: 3rem; }
 
-@media only screen and (max-width: 750px) {
-  .contact__title {
-    font-size: 2rem; }
-  .contact__email, .contact__github {
-    font-size: 3rem; } }
+@media only screen and (max-width: 550px) {
+  .contact__title, .contact__email, .contact__github {
+    grid-column: 2 / span 6; } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -202,20 +200,6 @@ body {
     color: #f9f7f6; }
   .heading-4--dark {
     color: #54483A; }
-
-.btn {
-  background-color: #c69963;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding: 1.8rem 3rem;
-  cursor: pointer;
-  transition: all .2s; }
-  .btn:hover {
-    background-color: #B28451; }
 
 .mb-sm {
   margin-bottom: 2rem; }

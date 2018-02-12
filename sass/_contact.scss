@@ -23,3 +23,11 @@
         font-size: 3rem;
     }
 }
+
+@media only screen and (max-width: $bp-sm) {
+    .contact {
+        &__title, &__email, &__github {
+            grid-column: 2 / span 6
+        }
+    }
+}
