@@ -5,53 +5,53 @@
     grid-template-rows: repeat(9, 5vw);
     grid-gap: 1.5rem;
     padding: 1.5rem;
+    grid-template-areas: "gymnasium gymnasium universitet universitet universitet universitet universitet universitet"
+                         "gymnasium gymnasium universitet universitet universitet universitet universitet universitet"
+                         "python python universitet universitet universitet universitet universitet universitet"
+                         "python python csharp csharp csharp html5 html5 html5"
+                         "xamarin xamarin csharp csharp csharp html5 html5 html5"
+                         "xamarin xamarin csharp csharp csharp html5 html5 html5"
+                         "js js csharp csharp csharp css3 css3 css3"
+                         "js js sass sass sass css3 css3 css3"
+                         "js js sass sass sass css3 css3 css3";
 
     &__item {
         &--1 {
-            grid-row: 1 / span 2;
-            grid-column: 1 / span 2;
+            grid-area: gymnasium;
         }
 
         &--2 {
-            grid-row: 1 / span 3;
-            grid-column: 3 / span 6;
+            grid-area: universitet;
         }
 
         &--3 {
-            grid-row: 4 / span 4; 
-            grid-column: 3 / span 3;
+            grid-area: csharp;
         }
 
         &--4 {
-            grid-row: 3 / span 2;
-            grid-column: 1 / span 2;
+            grid-area: python;
             background-color: white;
         }
 
         &--5 {
-            grid-row: 4 / span 3;
-            grid-column: 6 / span 3;
+            grid-area: html5;
         }
 
         &--6 {
-            grid-column: 1 / span 2;
-            grid-row: 5 / span 2;
+            grid-area: xamarin;
             background-color: white;
         }
 
         &--7 {
-            grid-row: 7 / span 3;
-            grid-column: 1 / span 2;
+            grid-area: js;
         }
 
         &--8 {
-            grid-row: 8 / span 2;
-            grid-column: 3 / span 3;
+            grid-area: sass;
         }
 
         &--9 {
-            grid-row: 7 / span 3;
-            grid-column: 6 / span 3;
+            grid-area: css3;
         }
     }
 
@@ -60,6 +60,33 @@
         height: 100%;
         object-fit: cover;
         display: block;
+    }
+}
+
+@media only screen and (max-width: $bp-lg) {
+    .experiences {
+        grid-template-rows: repeat(3, 5vw);
+        grid-template-areas: "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"
+                             "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"
+                             "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"                             
+                             "html5 html5 html5 html5 css3 css3 css3 css3"
+                             "html5 html5 html5 html5 css3 css3 css3 css3"
+                             "html5 html5 html5 html5 css3 css3 css3 css3"
+                             "sass sass sass sass sass js js js"
+                             "sass sass sass sass sass js js js"
+                             "sass sass sass sass sass js js js"
+                             "sass sass sass sass sass js js js"
+                             "sass sass sass sass sass js js js"
+                             "python python python python xamarin xamarin xamarin xamarin"
+                             "python python python python xamarin xamarin xamarin xamarin"
+                             "python python python python xamarin xamarin xamarin xamarin"
+                             "python python python python xamarin xamarin xamarin xamarin"                             
+                             "csharp csharp csharp csharp csharp csharp csharp csharp"
+                             "csharp csharp csharp csharp csharp csharp csharp csharp"
+                             "csharp csharp csharp csharp csharp csharp csharp csharp"
+                             "csharp csharp csharp csharp csharp csharp csharp csharp"
+                             "csharp csharp csharp csharp csharp csharp csharp csharp";                             
+                             
     }
 }
 
