@@ -61,6 +61,7 @@ body {
     display: grid;
     grid-template-rows: 90vh 30vh repeat(2, min-content) 25vh;
     grid-template-columns: repeat(3 , 1fr);
+    background-color: $color-grey-light-1;
     grid-template-areas: "intro intro about"
                          "img-transition img-transition img-transition"
                          "qualities qualities qualities"
