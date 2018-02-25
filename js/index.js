@@ -1,14 +1,14 @@
 (function(global) {
     var portfolio = {
         init: function() {
-            this.cacheDOM();
+            this.cacheDOM(this);
             this.introAnimate(this);
         },
-        cacheDOM: function() {
-            this.$container = $('.container');
-            this.$header = this.$container.find(".header");
-                this.$header__title = this.$header.find(".header__title");
-                this.$header__name  = this.$header.find(".header__name");
+        cacheDOM: function(self) {
+            self.$container = $('.container');
+            self.$header = self.$container.find(".header");
+                self.$header__title = self.$header.find(".header__title");
+                self.$header__name  = self.$header.find(".header__name");
 
         },
         introAnimate: function(self) {
