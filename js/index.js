@@ -17,10 +17,10 @@
             });
             self.$header__name.animate({fontSize: "-=80px"}, 250, function() {
                 self.$header__name.animate({fontSize: "+=80px"}, 250)
-            });            
-            
+            });
+
         }
     }
-    
+
     portfolio.init();
-})(this);
+})(this); 
