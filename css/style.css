@@ -35,7 +35,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 90vh 30vh repeat(2, min-content) 25vh;
+  grid-template-rows: 90vh 45vh repeat(2, min-content) 25vh;
   grid-template-columns: repeat(3, 1fr);
   background-color: #f9f7f6;
   grid-template-areas: "intro intro about" "img-transition img-transition img-transition" "qualities qualities qualities" "experiences experiences experiences" "footer footer footer"; }
@@ -84,7 +84,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%); }
 
 .qualities {
   grid-column: 1/4;
