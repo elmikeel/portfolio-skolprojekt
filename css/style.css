@@ -14,6 +14,11 @@ html {
   @media only screen and (max-width: 550px) {
     html {
       font-size: 40%; } }
+  @media only screen and (max-width: 350px) {
+    html {
+      font-size: 28%;
+    }
+  }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -38,10 +43,18 @@ body {
   grid-template-rows: 90vh 45vh repeat(2, min-content) 25vh;
   grid-template-columns: repeat(3, 1fr);
   background-color: #f9f7f6;
-  grid-template-areas: "intro intro about" "img-transition img-transition img-transition" "qualities qualities qualities" "experiences experiences experiences" "footer footer footer"; }
+  grid-template-areas: "intro intro about"
+ "img-transition img-transition img-transition"
+ "qualities qualities qualities"
+ "experiences experiences experiences"
+ "footer footer footer"; }
   @media only screen and (max-width: 550px) {
     .container {
-      grid-template-areas: "intro intro intro" "about about about" "qualities qualities qualities" "experiences experiences experiences" "footer footer footer"; } }
+      grid-template-areas: "intro intro intro"
+ "about about about"
+ "qualities qualities qualities"
+ "experiences experiences experiences"
+ "footer footer footer"; } }
 
 .header {
   background-image: linear-gradient(rgba(16, 29, 44, 0.23), rgba(16, 29, 44, 0.93)), url(../img/header.jpg);
@@ -115,7 +128,15 @@ body {
   grid-template-rows: repeat(9, 5vw);
   grid-gap: 2rem;
   padding: 1.5rem;
-  grid-template-areas: "gymnasium gymnasium universitet universitet universitet universitet universitet universitet" "gymnasium gymnasium universitet universitet universitet universitet universitet universitet" "python python universitet universitet universitet universitet universitet universitet" "python python csharp csharp csharp html5 html5 html5" "xamarin xamarin csharp csharp csharp html5 html5 html5" "xamarin xamarin csharp csharp csharp html5 html5 html5" "js js csharp csharp csharp css3 css3 css3" "js js sass sass sass css3 css3 css3" "js js sass sass sass css3 css3 css3"; }
+  grid-template-areas: "gymnasium gymnasium universitet universitet universitet universitet universitet universitet"
+ "gymnasium gymnasium universitet universitet universitet universitet universitet universitet"
+ "python python universitet universitet universitet universitet universitet universitet"
+ "python python csharp csharp csharp html5 html5 html5"
+ "xamarin xamarin csharp csharp csharp html5 html5 html5"
+ "xamarin xamarin csharp csharp csharp html5 html5 html5"
+ "js js csharp csharp csharp css3 css3 css3"
+ "js js sass sass sass css3 css3 css3"
+ "js js sass sass sass css3 css3 css3"; }
   .experiences__item--1 {
     grid-area: gymnasium; }
   .experiences__item--2 {
@@ -145,7 +166,26 @@ body {
 @media only screen and (max-width: 1000px) {
   .experiences {
     grid-template-rows: repeat(3, 5vw);
-    grid-template-areas: "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet" "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet" "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"                              "html5 html5 html5 html5 css3 css3 css3 css3" "html5 html5 html5 html5 css3 css3 css3 css3" "html5 html5 html5 html5 css3 css3 css3 css3" "sass sass sass sass sass js js js" "sass sass sass sass sass js js js" "sass sass sass sass sass js js js" "sass sass sass sass sass js js js" "sass sass sass sass sass js js js" "python python python python xamarin xamarin xamarin xamarin" "python python python python xamarin xamarin xamarin xamarin" "python python python python xamarin xamarin xamarin xamarin" "python python python python xamarin xamarin xamarin xamarin"                              "csharp csharp csharp csharp csharp csharp csharp csharp" "csharp csharp csharp csharp csharp csharp csharp csharp" "csharp csharp csharp csharp csharp csharp csharp csharp" "csharp csharp csharp csharp csharp csharp csharp csharp" "csharp csharp csharp csharp csharp csharp csharp csharp"; } }
+    grid-template-areas: "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"
+ "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"
+ "gymnasium gymnasium gymnasium universitet universitet universitet universitet universitet"                             
+ "html5 html5 html5 html5 css3 css3 css3 css3"
+ "html5 html5 html5 html5 css3 css3 css3 css3"
+ "html5 html5 html5 html5 css3 css3 css3 css3"
+ "sass sass sass sass sass js js js"
+ "sass sass sass sass sass js js js"
+ "sass sass sass sass sass js js js"
+ "sass sass sass sass sass js js js"
+ "sass sass sass sass sass js js js"
+ "python python python python xamarin xamarin xamarin xamarin"
+ "python python python python xamarin xamarin xamarin xamarin"
+ "python python python python xamarin xamarin xamarin xamarin"
+ "python python python python xamarin xamarin xamarin xamarin"                             
+ "csharp csharp csharp csharp csharp csharp csharp csharp"
+ "csharp csharp csharp csharp csharp csharp csharp csharp"
+ "csharp csharp csharp csharp csharp csharp csharp csharp"
+ "csharp csharp csharp csharp csharp csharp csharp csharp"
+ "csharp csharp csharp csharp csharp csharp csharp csharp"; } }
 
 .contact {
   background: #101d2c;
